@@ -1,12 +1,12 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import Savings from './pages/Savings';
 
 export function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/savings" element={< Savings />} />
     </Routes>
   );
 }
